@@ -1,6 +1,13 @@
 #!/usr/bin/env python3
+'''A module for working with lockboxes.
+'''
+
 
 def canUnlockAll(boxes):
+    '''Checks if all the boxes in a list of boxes containing the keys
+    (indices) to other boxes can be unlocked given that the first
+    box is unlocked.
+    '''
     x = len(boxes)
     c = 0
     for n in range(1, x):
