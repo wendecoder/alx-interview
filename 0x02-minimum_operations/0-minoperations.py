@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-#!/usr/bin/python3
 """A Module to calculate Minimum Operations"""
 
 
@@ -26,4 +25,3 @@ def minOperations(n):
     for l, m in occurences.items():
         minimum += l * m
     return minimum
-
