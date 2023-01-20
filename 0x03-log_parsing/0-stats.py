@@ -32,12 +32,14 @@ def search_items(line, s):
 
     return size
 
+
 def add_code(code, codes):
     """count the status code"""
     try:
         codes[code] += 1
     except KeyError:
         pass
+
 
 def print_all(stat):
     """ Print all """
@@ -47,9 +49,10 @@ def print_all(stat):
         if value is not 0:
             print("{}: {}".format(key, value))
 
+
 if __name__ == "__main_":
-    status = {"200":0, "301":0, "400":0, "401":0,
-            "403":0, "404":0,"405":0,"500":0}
+    status = {"200": 0, "301": 0, "400": 0, "401": 0,
+              "403": 0, "404": 0, "405": 0, "500": 0}
     file_size = 0
     i = 0
 
